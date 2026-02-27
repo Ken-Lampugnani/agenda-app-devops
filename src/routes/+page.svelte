@@ -1,76 +1,30 @@
 <script>
-	let agenda = [];
-	let newAgenda = '';
-
-	function addAgenda() {
-		if (newAgenda.trim() !== '') {
-			agenda = [...agenda, newAgenda];
-			newAgenda = '';
-		}
-	}
-
-	function removeAgenda(index) {
-		agenda = agenda.filter((_, i) => i !== index);
-	}
+	import { base } from '$app/paths';
 </script>
 
-<main>
-	<h1>Traktandenliste</h1>
+<h1>Agenda App – Projektbeschreibung</h1>
 
-	<div class="input-container">
-		<input
-			type="text"
-			bind:value={newAgenda}
-			placeholder="Neues Traktandum eingeben"
-		/>
-		<button on:click={addAgenda}>Add</button>
-	</div>
+<p>
+	Diese Web-App wurde im Rahmen der DevOps-Phase «Build» umgesetzt.
+	Sie demonstriert ein einfaches Feature-Set (Traktanden hinzufügen/entfernen)
+	sowie automatisiertes Deployment über GitHub Actions auf GitHub Pages.
+</p>
 
-	<ul>
-		{#each agenda as item, index}
-			<li>
-				{item}
-				<button on:click={() => removeAgenda(index)}>Remove</button>
-			</li>
-		{/each}
-	</ul>
-</main>
+<h2>Funktionen</h2>
+<ul>
+	<li>Traktandum hinzufügen</li>
+	<li>Traktandum entfernen</li>
+	<li>Direkte Aktualisierung der Liste</li>
+</ul>
 
-<style>
-	main {
-		max-width: 500px;
-		margin: 0 auto;
-		font-family: Arial, sans-serif;
-	}
+<h2>Technologien</h2>
+<ul>
+	<li>SvelteKit</li>
+	<li>JavaScript (JSDoc)</li>
+	<li>GitHub Actions (CI/CD)</li>
+	<li>GitHub Pages (Hosting)</li>
+</ul>
 
-	h1 {
-		text-align: center;
-	}
-
-	.input-container {
-		display: flex;
-		gap: 10px;
-		margin-bottom: 20px;
-	}
-
-	input {
-		flex: 1;
-		padding: 5px;
-	}
-
-	button {
-		padding: 5px 10px;
-		cursor: pointer;
-	}
-
-	ul {
-		list-style: none;
-		padding: 0;
-	}
-
-	li {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 10px;
-	}
-</style>
+<p>
+	<a href="{base}/">Zur App</a>
+</p>
