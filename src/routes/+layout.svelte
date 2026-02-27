@@ -10,8 +10,8 @@
 </svelte:head>
 
 <nav class="nav">
-	<a href="{base}/">App</a>
-	<a href="{base}/projekt">Projektbeschreibung</a>
+	<a href={base + '/'}>App</a>
+	<a href={base + '/projekt'}>Projektbeschreibung</a>
 	<a href="https://github.com/ken-lampugnani/agenda-app-devops" target="_blank" rel="noreferrer">Repository</a>
 </nav>
 

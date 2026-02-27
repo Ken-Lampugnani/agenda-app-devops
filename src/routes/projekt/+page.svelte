@@ -25,6 +25,4 @@
 	<li>GitHub Pages (Hosting)</li>
 </ul>
 
-<p>
-	<a href="{base}/">Zur App</a>
-</p>
+<a href={base + '/'}>Zur App</a>
