@@ -2,53 +2,115 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Agenda App – Projekt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agenda App – DevOps Projekt</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; }
-    header { margin-bottom: 24px; }
-    h1 { margin: 0 0 8px; }
-    .card { border: 1px solid #ddd; border-radius: 10px; padding: 16px; margin: 16px 0; }
-    code { background: #f6f6f6; padding: 2px 6px; border-radius: 6px; }
-    ul { line-height: 1.6; }
-    a { text-decoration: none; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code {
+      background: #eee;
+      padding: 3px 6px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0366d6;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Agenda App</h1>
-    <p>Kleine Traktandenliste zum Hinzufügen und Entfernen von Einträgen.</p>
+    <p>DevOps-Projekt – Phase "Build"</p>
   </header>
 
-  <div class="card">
-    <h2>Projektziel</h2>
-    <p>Eine einfache Agenda-/Traktandenliste, um grundlegende SvelteKit-Konzepte und den DevOps-Build-Prozess zu üben.</p>
+  <div class="section">
+    <h2>Projektbeschreibung</h2>
+    <p>
+      Die Agenda App ist eine einfache Webanwendung zur Verwaltung von 
+      Traktanden. Benutzer können Einträge hinzufügen und wieder entfernen.
+      Das Projekt dient zur praktischen Umsetzung der DevOps-Phase "Build".
+    </p>
   </div>
 
-  <div class="card">
-    <h2>Features</h2>
+  <div class="section">
+    <h2>Funktionen</h2>
     <ul>
-      <li>Traktandum hinzufügen</li>
-      <li>Traktandum entfernen</li>
-      <li>Einfache, klare UI</li>
+      <li>Hinzufügen neuer Traktanden</li>
+      <li>Entfernen bestehender Einträge</li>
+      <li>Dynamische Aktualisierung der Liste</li>
+      <li>Einfache und benutzerfreundliche Oberfläche</li>
     </ul>
   </div>
 
-  <div class="card">
-    <h2>Tech Stack</h2>
+  <div class="section">
+    <h2>Technologien</h2>
     <ul>
-      <li><code>SvelteKit</code></li>
-      <li><code>JavaScript</code> (JSDoc)</li>
-      <li><code>npm</code></li>
+      <li><code>SvelteKit</code> – Frontend-Framework</li>
+      <li><code>JavaScript (JSDoc)</code></li>
+      <li><code>npm</code> als Paketmanager</li>
+      <li><code>Git & GitHub</code> für Versionskontrolle</li>
+      <li><code>GitHub Pages</code> für Deployment</li>
     </ul>
   </div>
 
-  <div class="card">
+  <div class="section">
+    <h2>DevOps Build-Phase</h2>
+    <p>
+      Das Projekt wurde lokal entwickelt, versioniert und anschliessend über
+      GitHub Pages veröffentlicht. Dadurch wurde ein einfacher und stabiler
+      Deployment-Prozess umgesetzt.
+    </p>
+  </div>
+
+  <div class="section">
     <h2>Repository</h2>
     <p>
-      <a href="https://github.com/Ken-Lampugnani/agenda-app-devops" target="_blank">➡️ GitHub Repo öffnen</a>
+      <a href="https://github.com/Ken-Lampugnani/agenda-app-devops" target="_blank">
+        Zum GitHub Repository
+      </a>
     </p>
-    <p style="font-size: 0.9em; color: #666;">(Link anpassen)</p>
   </div>
+
+  <footer>
+    <p>Erstellt von Ken Lampugnani | Modul DevOps</p>
+  </footer>
+
 </body>
 </html>
